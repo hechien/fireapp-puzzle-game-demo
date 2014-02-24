@@ -1,0 +1,32 @@
+@import "compass/reset/utilities";
+@import "compass/css3/box-sizing";
+@include global-reset;
+
+.active {
+  color: red;
+}
+
+.inactive {
+  color: gray;
+}
+
+.matched {
+  color: green;
+}
+
+#blocks {
+
+  max-width: 500px;
+
+  li {
+
+    border: 1px solid;
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+
+    @include box-sizing(border-box);
+  }
+}
